@@ -1,6 +1,6 @@
 ---
 title: "Tutorial - NDVI Temporal da Amazônia"
-author: "Cássio Moquedace, Lara Lima, Khaterine Martinez, Rugana Imbana"
+author: "Cássio Moquedace, Khaterine Martinez, Lara Lima, Rugana Imbana"
 date: "13/09/2020"
 ---
 ## Objetivo
