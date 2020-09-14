@@ -31,7 +31,7 @@ Limpando memória não utilizada no R
 ```{r message=FALSE}
 gc()
 ```
-```{r message=FALSE}
+```{r message=FALSE, echo=TRUE}
 library("ggplot2")
 ```
 
