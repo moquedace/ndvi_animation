@@ -31,6 +31,9 @@ Limpando memória não utilizada no R
 ```{r message=FALSE}
 gc()
 ```
+```{r message=FALSE}
+library("ggplot2")
+```
 
 Carregando pacotes
 ```{r message=FALSE}
