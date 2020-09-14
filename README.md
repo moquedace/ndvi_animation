@@ -31,10 +31,6 @@ Limpando memória não utilizada no R
 ```{r message=FALSE}
 gc()
 ```
-```{r message=FALSE, echo=TRUE}
-library("ggplot2")
-```
-
 Carregando pacotes
 ```{r message=FALSE}
 pkg <- c("raster", "geobr", "dplyr", "dplyr", "sf", "MODIStsp", "stringr", 
