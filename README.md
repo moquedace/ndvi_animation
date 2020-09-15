@@ -123,14 +123,14 @@ lista_rasters <- list()
 
 Criando `for` para leitura, reprojeção de cada imagem para o datum WGS84 e coordenadas geográficas e aumento dos tamanhos dos pixels das imagens para acelerar execução do código
 
-O `fact = 5` utilizado indica que o tamanho do pixel será aumentado 5 vezes. No nosso caso que o tamanho do pixel original da imagem é de aproximadamente de 1 km, a resolução final terá 5 km cada pixel. A depender do seu objetivo com a imagem ou o tamanho da área de estudo, você pode variar esse valor ou ainda não aplicar a função `aggregate`
+O `fact = 2` utilizado indica que o tamanho do pixel será aumentado 2 vezes. No nosso caso que o tamanho do pixel original da imagem é de aproximadamente de 1 km, a resolução final terá 2 km cada pixel. A depender do seu objetivo com a imagem ou o tamanho da área de estudo, você pode variar esse valor ou ainda não aplicar a função `aggregate`
 
 ```{r error=TRUE, message=FALSE, warning=FALSE}
 for (i in 1:length(lista_nomes)) {
   
   lista_rasters[[i]] <- raster(lista_nomes[i]) %>% 
     projectRaster(crs = wgs84, method = "bilinear") %>% 
-    aggregate(fact = 3)
+    aggregate(fact = 2)
   
 }
 ```
@@ -154,6 +154,9 @@ Plotando imagens e vetor para visualizar a sobreposição
 plot(r.emp[[1]])
 plot(amazonia_shp$geom, add = T)
 ```
+<p align="center">
+<img src="amz_srec.jpg" width="600">
+</p>
 
 Recortando imagens nos limites da Amazônia
 ```{r error=TRUE, message=FALSE}
@@ -161,6 +164,10 @@ mask_amz <- r.emp %>%
   raster::crop(amazonia_shp) %>% 
   raster::mask(amazonia_shp)
 ```
+
+<p align="center">
+<img src="amz_crec.jpg" width="600">
+</p>
 
 Atribuindo `NA` em valores ausentes
 ```{r error=TRUE, message=FALSE}
