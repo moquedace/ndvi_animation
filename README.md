@@ -165,10 +165,6 @@ mask_amz <- r.emp %>%
   raster::mask(amazonia_shp)
 ```
 
-<p align="center">
-<img src="amz_crec.jpg" width="600">
-</p>
-
 Atribuindo `NA` em valores ausentes
 ```{r error=TRUE, message=FALSE}
 mask_amz[mask_amz == 99999] = NA
@@ -178,6 +174,10 @@ Visualizando as imagens cortadas e com `NA`
 ```{r error=TRUE, message=FALSE, fig.align='center', dpi=300}
 plot(mask_amz[[1]])
 ```
+
+<p align="center">
+<img src="amz_crec.jpg" width="600">
+</p>
 
 Atribuindo nome em cada raster dentro da pilha
 ```{r error=TRUE, message=FALSE}
