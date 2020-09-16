@@ -328,3 +328,12 @@ saveGIF(ani.height = 1000, ani.width = 1000, # Definindo resolução e tamanho d
 <p align="center">
 <img src="animation.gif" width="600" height="600">
 </p>
+
+<p>&nbsp;</p>
+
+### Vídeo Tutorial
+<p align="center">
+
+[!(thumb.jpg)(https://youtu.be/lr5bXEs0IbQ)
+
+</p>
