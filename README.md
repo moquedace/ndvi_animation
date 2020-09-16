@@ -333,5 +333,5 @@ saveGIF(ani.height = 1000, ani.width = 1000, # Definindo resolução e tamanho d
 
 ### Vídeo Tutorial
 
-[<img src="thumb.JPG" width="600">](https://youtu.be/lr5bXEs0IbQ)
+[<img src="thumb.jpg" width="600">](https://youtu.be/lr5bXEs0IbQ)
 
