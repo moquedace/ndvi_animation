@@ -33,7 +33,7 @@ gc()
 ```
 Carregando pacotes
 ```{r message=FALSE}
-pkg <- c("raster", "geobr", "dplyr", "dplyr", "sf", "MODIStsp", "stringr", 
+pkg <- c("raster", "geobr", "dplyr", "sf", "MODIStsp", "stringr", 
          "lubridate", "ggplot2", "RColorBrewer", "scales", "ggsn", "animation",
          "grDevices", "ggpubr")
 
