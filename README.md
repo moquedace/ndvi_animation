@@ -1,7 +1,7 @@
 ---
-title: "Tutorial - NDVI Temporal da Amazônia"
-author: "Cássio Moquedace, Khaterine Martinez, Lara Lima, Rugana Imbana"
-date: "13/09/2020"
+Título: "Tutorial - NDVI Temporal da Amazônia"
+Autores: "Cássio Moquedace, Khaterine Martinez, Lara Lima, Rugana Imbana"
+Data: "13/09/2020"
 ---
 ## Objetivo
 Criar uma animação espaço temporal do Índice de Vegetação por Diferença Normalizada (NDVI) da Amazônia Legal no ano de 2019
@@ -61,6 +61,7 @@ sink(con, append = T, type = "message")
 ```
 
 Baixando dados
+
 Maiores detalhes de como baixar imagens usando o pacote `MODIStsp` acesse [MODIStsp v2.0.2](https://docs.ropensci.org/MODIStsp/articles/interactive_execution.html)
 ```{r message=FALSE, eval=FALSE, echo=TRUE}
 MODIStsp()
