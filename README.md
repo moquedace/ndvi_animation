@@ -1,7 +1,6 @@
 ---
 Título: "Tutorial - NDVI Temporal da Amazônia"
 Autores: "Cássio Moquedace, Khaterine Martinez, Lara Lima, Rugana Imbana"
-Data: "13/09/2020"
 ---
 ## Objetivo
 Criar uma animação espaço temporal do Índice de Vegetação por Diferença Normalizada (NDVI) da Amazônia Legal no ano de 2019
